@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        
+        .welcome-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+        
+        .welcome {
+            font-size: 42px;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid white;
+            width: 0;
+            animation: typing 3s steps(20, end) forwards, blink 0.7s step-end infinite;
+            text-shadow: 0 0 10px #00f0ff, 0 0 20px #00e5ff;
+        }
+        
+        @keyframes typing {
+            from {
+                width: 0
+            }
+            to {
+                width: 8ch
+            }
+        }
+        
+        @keyframes blink {
+            from,
+            to {
+                border-color: transparent
+            }
+            50% {
+                border-color: white;
+            }
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+            color: #00e5ff;
+            text-shadow: 0 0 10px #00e5ff;
+            animation: fadeIn 1.2s ease forwards;
+            animation-delay: 3.2s;
+            opacity: 0;
+        }
+        
+        .branch-info {
+            color: #ddd;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 3.6s;
+        }
+        
+        .section {
+            background-color: rgba(255, 255, 255, 0.08);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .section:nth-of-type(1) {
+            animation-delay: 4.2s;
+        }
+        
+        .section:nth-of-type(2) {
+            animation-delay: 4.6s;
+        }
+        
+        .section:nth-of-type(3) {
+            animation-delay: 5s;
+        }
+        
+        h2 {
+            color: #00e5ff;
+            font-size: 24px;
+            border-bottom: 2px solid #00e5ff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        h4 {
+            color: #ff66cc;
+            font-size: 22px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            font-size: 18px;
+            padding: 5px;
+        }
+        
+        p {
+            font-size: 17px;
+            line-height: 1.5;
+            color: #f1f1f1;
+        }
+        
+        footer {
+            color: #ccc;
+            margin-top: 30px;
+            font-size: 14px;
+            padding-bottom: 15px;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 5.4s;
+        }
+        
+        .credit {
+            color: #ffee58;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-shadow: 0 0 10px #ffee58, 0 0 30px #fff176;
+            animation: glow 2s ease-in-out infinite alternate, fadeIn 1s ease forwards;
+            animation-delay: 5.6s;
+            opacity: 0;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ffee58, 0 0 20px #fdd835;
+            }
+            to {
+                text-shadow: 0 0 30px #fff176, 0 0 60px #ffee58;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="welcome-container">
+        <h1 class="welcome">Welcome</h1>
+    </div>
+
+    <h1 class="name">Harmanjot Singh</h1>
+    <h3 class="branch-info">Branch: Information Technology</h3>
+    <h3 class="branch-info">Roll no: 1828</h3>
+
+    <div class="section">
+        <h2>About Myself</h2>
+        <p>Hello! I am Harmanjot Singh, an IT student at <b>GURU NANAK DEV POLYTECHNIC COLLEGE</b>. I am here to achieve my goals and improve my skills in programming and technology.</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Basic Web Designing</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h4>Interest</h4>
+        <p>My main interests are in web development, and graphic designing.</p>
+    </div>
+
+    <footer>
+        © 2025 Harmanjot Singh | Portfolio Page
+        <div class="credit">✨ Made By Armaan Singh — Roll No: 1808 ✨</div>
+    </footer>
+
+</body>
+
+</html>
